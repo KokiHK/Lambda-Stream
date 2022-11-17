@@ -12,6 +12,11 @@ public class Chapter10 {
         list.add(new Task(LocalDate.of(2021, 11, 9), "スクールの課題を解く", false));
 
         // 以下記述
+        list.stream()
+        .filter(f -> f.isDone() ==false );
+        
+        
+        
         
     }
 }
