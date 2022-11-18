@@ -13,8 +13,9 @@ public class Chapter10 {
 
         // 以下記述
         list.stream()
-        .filter(f -> f.isDone() ==false );
-        
+        .filter(f -> f.isDone() ==false )
+        .count()
+        .forEach(System.out::println);
         
         
         
